@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+#villains-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #00ff00; /* Título en verde */
+    margin-bottom: 30px;
+}
+
+#villain-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.villain-card {
+    background-color: #333; /* Fondo de las tarjetas en un tono gris oscuro */
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.villain-card:hover {
+    transform: scale(1.05);
+    border: 2px solid #ffff00; /* Borde amarillo en hover */
+}
+
+.villain-card h2 {
+    color: #00ff00; /* Nombre del monstruo en verde */
+    margin-bottom: 10px;
+}
+
+.villain-card p {
+    color: #ddd; /* Descripción en un blanco/gris claro */
+}
+
+.stat {
+    margin-top: 10px;
+}
+
+.stat h3 {
+    font-size: 1.2em;
+    color: #ffff00; /* Títulos de stats en amarillo */
+}
+
+.stat p {
+    color: #fff; /* Valor de stats en blanco */
+}
